@@ -1,0 +1,18 @@
+@import '~foundation-sites/scss/util/util';
+
+$foundation-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+  theme: rgb(144, 198, 149),
+  link: rgb(68, 108, 179),
+);
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+
+@include add-foundation-colors;

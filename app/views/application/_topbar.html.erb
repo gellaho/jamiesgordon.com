@@ -1,0 +1,29 @@
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="responsive-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li>
+        <%= image_tag(asset_pack_path('packs/images/favicons/profile.png'), class: 'topbar-image') %>
+      </li>
+      <li class="menu-text">Jamie Gordon</li>
+      <li><%= link_to('Home', root_path) %></li>
+      <li class="has-submenu">
+        <%= link_to('Papers', papers_path) %>
+        <ul class="submenu menu vertical" data-submenu>
+          <li><%= link_to('Distributed XML with Tag Shuffling in Cloud Computing', distributedxml_path) %></li>
+          <li><%= link_to('A Comparison of Software Testing (JISAR)', jisarcomparison_path) %></li>
+          <li><%= link_to('Taxonomy of Common Software Testing Terminology (JISAR)', jisartaxonomy_path) %></li>
+          <li><%= link_to('A Comparison of Software Testing (CONISAR)', conisarcomparison_path) %></li>
+          <li><%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path) %></li>
+        </ul>
+      </li>
+      <li><%= link_to('Resume', 'resumes/resume.pdf') %></li>
+      <li><%= link_to('GitHub', 'https://github.com/gellaho') %></li>
+      <li><%= link_to('About', about_path) %></li>
+    </ul>
+  </div>
+</div>

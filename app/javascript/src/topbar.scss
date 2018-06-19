@@ -1,0 +1,11 @@
+@import 'colors';
+
+.top-bar {
+  .menu-text {
+    color: get-color(theme);
+  }
+
+  .topbar-image {
+    height: 2.4rem;
+  }
+}

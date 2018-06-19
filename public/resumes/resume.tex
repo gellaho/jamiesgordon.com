@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{casual}
+\moderncvcolor{Green}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%% Personal data
+\firstname{Jamie}
+\familyname{Gordon}
+\title{Software Developer} 
+\address{4469 Drayton Lane}{Oviedo, FL 32765} 
+\mobile{+1~(386)~852~0156}
+\email{jamiesgordon@gmail.com} 
+\social[linkedin]{jamiesgordon}
+\social[github]{gellaho}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2010--2015}{Computer Science, BS}{University of North Florida}{Jacksonville}{ \textit{3.85 GPA} }{Dean's List} % arguments 3 to 6 can be left empty
+\cventry{2006--2010}{International Baccalaureate Program}{Spruce Creek High School}{Port Orange}{ \textit{4.65 GPA} }{Summa cum Laude} % arguments 3 to 6 can be left empty
+\section{Experience}
+	\cventry{2013--May 2018}{Software Engineer}{ROI Revolution, Inc.}{Orlando, FL}{}{Worked on tools to help analysts improve online advertising results for ROI's clients. }
+	\cvitem{}{\textbf{Achievements:}}
+	\cvitem{ \textbf{PUSH} }{An application for managing client product feeds.}
+	\cvlistitem{Designed system for downloading and parsing different types of feeds (csv, XML, etc.) from various sources like URLs, FTP locations, and shopping cart APIs}
+	\cvlistitem{Built process for users to transform these raw feeds into feeds structured for Google, Bing, and other advertising platforms.}
+	\cvlistitem{Automated loading, transforming, and submission of feeds on a scheduled basis using background workers.}
+	\cvitem{ \textbf{YARD} }{A system in Elixir for warehousing of Amazon Sponsored Products sales data.}
+	\cvlistitem{Downloads and stores historical cost and sales data for various Amazon advertising platforms.}
+	\cvlistitem{Parallelized daily report downloads as quickly as possible through Amazon's APIs.}
+	\cvlistitem{Also provided an internal API for querying and aggregating overtime sales data for reporting and analysis.}
+	\cvitem{ \textbf{EDGE} }{ A Rails Application that automates campaign buildouts for Google AdWords and Bing Adcenter. }
+	\cvlistitem{Added interface for seeing unposted campaign elements and managing conflicts.}
+	\cvlistitem{Overhauled interface design when upgrading Bootstrap framework from 2 to 3.}
+	\cvlistitem{Refactored monolithic database models.}
+\section{Skills}
+	\cvitem{Ruby}{Significant experience with Ruby on Rails \& JRuby}
+	\cvitem{Elixir}{Experienced with concurrency concepts like GenStage \& Flow as well as GenServers and Applications.}
+	\cvitem{Postgresql}{Projects are very read \& write heavy and deal with large data.}
+	\cvitem{Languages}{Javascript (Node), HTML \& CSS, Java}
+	\cvitem{Tools}{Git \& GitHub, Amazon AWS}
+	\cvitem{OS}{Windows, Ubuntu Linux, Mac OSX}
+	\cvitem{Software}{Word, Excel, and Power Point}
+	\cvitem{}{}
+%\cvitem{title}{ \emph{Title} }
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvdoubleitem{category X}{XXX, YYY, ZZZ}{category Y}{XXX, YYY, ZZZ}
+%\cvlistitem{Item 1}
+%\cvlistdoubleitem{Item 2}{Item 3}
+%% ...
+
+%% A publications list
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{papers} % a bibtex file containing the list of publications
+
+\end{document}

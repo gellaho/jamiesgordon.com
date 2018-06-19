@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <title><%= content_for?(:title) ? yield(:title) : 'Jamie Gordon' %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_pack_tag 'application' %>
+    <%= favicon_link_tag asset_pack_path('packs/images/favicons/favicon-96x96.png', rel: 'icon', type: 'image/png') %>
+  </head>
+
+  <body>
+    <%= render 'topbar'%>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell auto">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<%= javascript_pack_tag 'application' %>

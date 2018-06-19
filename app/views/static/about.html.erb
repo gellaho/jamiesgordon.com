@@ -1,0 +1,131 @@
+<%= stylesheet_pack_tag 'about' %>
+
+<h1>I am Jamie Gordon</h1>
+<h2>Why Make a Website about Yourself?</h2>
+<div class="media-object">
+  <div class="media-object-section">
+    <%= image_tag(asset_pack_path('packs/images/jamie.jpg'), class: 'self-image') %>
+  </div>
+  <div class="media-object">
+    <div class="media-object-section">
+      <p>
+        It might be a little egotistical to make a website about yourself.
+        But, it turns out there are other people who are also "Jamie Gordon,"" so I decided to put this together.
+        I am somewhat un-Googleable at this time due to a number of factors.  
+        The biggest being a feud (apparently) between two British celebrity chefs Jamie Oliver
+        and Gordon Ramsay.
+      </p>
+      <p>
+        There is also an actor with that name, the wife of a KC Royals player, a brewer
+        who died in 2015 and more.
+      </p>
+      <p>
+        If you try my birthplace, Daytona Beach, with the name "Jamie Gordon" you'll mostly get references
+        to Jeff Gordon and or Jamie McMurray.  Jeff Gordon is actually the name of my father, but he's 
+        not a NASCAR driver.
+      </p>
+      <p>
+        Orlando (current residence) will get you closer, but still not entirely helpful.
+      </p>
+    </div>
+  </div>
+</div>
+<h2>Anyway</h2>
+<p>
+  This is where projects will go, anything else I decide is worth to put here will also be here.
+</p>
+<div class="grid-x grid-padding-x align-center">
+  <div class="cell small-4">
+    <%= image_tag(asset_pack_path('packs/images/gordon.jpg'), class: 'fun-image') %>
+  </div>
+</div>
+<h2>Gallery of Idiocy</h2>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/aaaaaaaaaaa.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Working through the pain.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/construction.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Construction day.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/eating.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Version bump.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/fear.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Fear.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/fix_idiocy.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Fix Idiocy.</figcaption></figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/hat_spin.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Masterful Hat Spin.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/math_king.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">The King &amp; Math.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/polymorphism.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">The Mysteries of Polymorphism.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/rain.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">JQuery and SQL Magic.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/sad_king.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">The Sad King.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <%= image_tag(asset_pack_path('packs/images/gifs/slow_mo.gif'), class: 'orbit-image') %>
+          <figcaption class="orbit-caption">Slow Motion.</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0"><span class="show-for-sr">Working through the pain.</span><span class="show-for-sr">Current Slide</span></button>
+    <button data-slide="1"><span class="show-for-sr">Construction day.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Version bump.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fear.</span></button>
+    <button data-slide="4"><span class="show-for-sr">Fix idiocy.</span></button>
+    <button data-slide="5"><span class="show-for-sr">Hat spin.</span></button>
+    <button data-slide="6"><span class="show-for-sr">The King &amp; Math.</span></button>
+    <button data-slide="7"><span class="show-for-sr">The Mysteries of Polymorphism.</span></button>
+    <button data-slide="8"><span class="show-for-sr">JQuery and SQL Magic.</span></button>
+    <button data-slide="9"><span class="show-for-sr">The Sad King.</span></button>
+    <button data-slide="10"><span class="show-for-sr">Slow Motion.</span></button>
+  </nav>
+</div>

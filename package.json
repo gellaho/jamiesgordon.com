@@ -1,0 +1,22 @@
+{
+  "name": "jamiesgordon_com",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "@types/jquery": "^3.3.2",
+    "@types/react": "^16.3.18",
+    "@types/react-dom": "^16.0.6",
+    "babel-preset-react": "^6.24.1",
+    "foundation-sites": "^6.4.4-rc1",
+    "motion-ui": "^2.0.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3",
+    "ts-loader": "3.5.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
