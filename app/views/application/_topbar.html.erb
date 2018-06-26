@@ -21,7 +21,14 @@
           <li><%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path) %></li>
         </ul>
       </li>
-      <li><%= link_to('Resume', 'resumes/resume.pdf') %></li>
+      <li class="has-submenu">
+        <%= link_to('Resume', 'resumes/resume.pdf') %>
+        <ul class="submenu menu vertical" data-submenu>
+          <li><%= link_to('resume.pdf (recommended)', 'resumes/resume.pdf') %></li>
+          <li><%= link_to('resume.odt', 'resumes/resume.odt') %></li>
+          <li><%= link_to('resume.docx', 'resumes/resume.docx') %></li>
+        </ul>
+      </li>
       <li><%= link_to('GitHub', 'https://github.com/gellaho') %></li>
       <li><%= link_to('About', about_path) %></li>
     </ul>
