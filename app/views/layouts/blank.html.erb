@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <title><%= content_for?(:title) ? yield(:title) : 'Jamie Gordon' %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_pack_path('packs/images/favicons/favicon-96x96.png', rel: 'icon', type: 'image/png') %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

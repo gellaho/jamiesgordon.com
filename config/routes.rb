@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root to: 'static#index'
 
   get 'about', to: 'static#about'
+  get 'oneenglishword', to: 'one_english_word#index'
   resources :static, only: %i[index]
   resources :papers, only: %i[index]
 
