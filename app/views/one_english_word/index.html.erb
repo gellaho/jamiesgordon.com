@@ -132,7 +132,7 @@
 
         // Returns a random hex color from COLORS array
         window.randomColor = function() {
-          var index = (Math.random() * (COLORS.length - 1)).toFixed()
+          var index = (Math.random() * (COLORS.length - 1)).toFixed();
           return COLORS[index];
         }
 
@@ -147,7 +147,7 @@
           url =
             this.BASE_API +
             '/words.json/randomWords?hasDictionaryDef=true&minDictionaryCount=30&api_key=' +
-            this.API_KEY
+            this.API_KEY;
 
           $.ajax(
             url,
@@ -162,6 +162,9 @@
                   Dictionary.getDefinition(window.words.shift());
                   window.started = true;
                 }
+              },
+              error: function(response, status, error) {
+                definition_div.innerHTML = status + ": " + response.responseJSON.message;
               }
             }
           )
@@ -170,18 +173,23 @@
         // Fetches definition of given word and presents it on finishing the request
         Dictionary.getDefinition = function(word) {
           url = this.BASE_API + '/word.json/' + word +
-                '/definitions?use_canonical=true&api_key=' + this.API_KEY
+                '/definitions?sourceDictionaries=wiktionary,webster,wordnet&use_canonical=true&api_key=' + 
+                this.API_KEY;
 
           $.ajax(
             url,
             {
               success: function(response) {
-                word_obj = response[0]
+                word_obj = response[0];
+                console.log(word_obj);
                 window.presentWord({
                   word: word,
                   type: word_obj.partOfSpeech,
                   definition: word_obj.text
                 })
+              },
+              error: function(response, status, error) {
+                definition_div.innerHTML = status + ": " + response.responseJSON.message;
               }
             }
           )
@@ -197,7 +205,7 @@
               var currentWord = window.words.shift();
               Dictionary.getDefinition(currentWord);
             }
-          }, 8000)
+          }, 16000)
         }
 
         Dictionary.refreshRandomWords()
