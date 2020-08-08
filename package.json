@@ -17,7 +17,7 @@
     "sass-loader": "^8.0.0",
     "ts-loader": "6.1.2",
     "typescript": "^3.6.3",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "webpack-dev-server": "3.8.1"
