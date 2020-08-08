@@ -10,14 +10,14 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-react": "^6.24.1",
     "foundation-sites": "^6.5.3",
+    "jquery": "^3.5.0",
     "motion-ui": "^2.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "sass-loader": "^8.0.0",
     "ts-loader": "6.1.2",
-    "typescript": "^3.6.3",
-    "jquery": "^3.5.0"
+    "typescript": "^3.6.3"
   },
   "devDependencies": {
     "webpack-dev-server": "3.8.1"
