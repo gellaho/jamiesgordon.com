@@ -1,0 +1,20 @@
+<%= render("dropdown", button_text: icon(:paper_clip, 'Papers')) do %>
+  <%= link_to('All Papers', papers_path) %>
+  <%= link_to('Distributed XML with Tag Shuffling in Cloud Computing', distributedxml_path) %>
+  <%= link_to('A Comparison of Software Testing (JISAR)', jisarcomparison_path) %>
+  <%= link_to('Taxonomy of Common Software Testing Terminology (JISAR)', jisartaxonomy_path) %>
+  <%= link_to('A Comparison of Software Testing (CONISAR)', conisarcomparison_path) %>
+  <%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path) %>
+<% end %>
+<%= link_to('resumes/resume.pdf') do %>
+  <%= icon(:arrow_down_tray, 'Resume') %>
+<% end %>
+<%= link_to('https://github.com/gellaho') do %>
+  <%= icon(:code_bracket, 'GitHub') %>
+<% end %>
+<%= link_to(about_path) do %>
+  <%= icon(:information_circle, 'About') %>
+<% end %>
+<%= link_to(oneenglishword_path) do %>
+  <%= icon(:arrow_top_right_on_square, 'oneenglishword') %>
+<% end %>

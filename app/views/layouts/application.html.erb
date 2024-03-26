@@ -4,19 +4,24 @@
     <title><%= content_for?(:title) ? yield(:title) : 'Jamie Gordon' %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_pack_tag 'application' %>
-    <%= favicon_link_tag asset_pack_path('media/packs/images/favicons/favicon-96x96.png', rel: 'icon', type: 'image/png') %>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= vite_client_tag %>
+    <%= vite_react_refresh_tag %>
+    <%= vite_stylesheet_tag("application.tailwind.css") %>
+    <%= vite_typescript_tag('application') %>
+    <%= vite_typescript_tag('alpine') %>
   </head>
 
   <body>
-    <%= render 'topbar'%>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell auto">
-          <%= yield %>
+    <div class="w-screen" x-data="{ mobileNav: false }">
+      <%= render('topbar') %>
+      <main class="flex flex-col items-center px-8 md:px-32 py-4 md:py-8">
+        <div class="flex flex-col gap-4 xl:w-1/2">
+          <%= content_for?(:content) ? yield(:content) : yield %>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
-<%= javascript_pack_tag 'application' %>

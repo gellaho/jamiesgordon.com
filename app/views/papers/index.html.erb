@@ -1,12 +1,9 @@
-<h1>Papers</h1>
-
-<div class="card">
-  <div class="card-divider">
-    <h3>
+<article class="flex flex-col gap-8">
+<h1 class="text-4xl">Papers</h1>
+  <div class="flex flex-col gap-3 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">
       Distrubted XML with Tag Shuffling in Cloud Computing
     </h3>
-  </div>
-  <div class="card-section">
     <p>
       I was also in the WORLDCOMP'15 Proceedings of the 2015 International Conference on Grid &amp; Cloud Computing &amp; Applications (GCA 2015).
       Unfortunately, there are no direct links to the paper.  I was given a physical copy and CD, but I do not currently have a CD drive or a scanner
@@ -14,90 +11,70 @@
     </p>
     <p>
       Here is a link to the event itself:
-      <%= link_to('Distributed XML with Tag Shuffling in Cloud Computing', distributedxml_path) %>.  
+      <%= link_to('Distributed XML with Tag Shuffling in Cloud Computing', distributedxml_path, class: "text-blue-700") %>.  
     </p>
     <p>
-      A link to the schedule is here: <%= link_to("ABDA'15, EEE'15, GCA'15, ESA'15, & ICOMP'15: Tuesday, July 28, 2015 Schedule", 'https://world-academy-of-science.org/worldcomp15/ws/program/abd_eee_gca_esa_icm28.html') %>
+      A link to the schedule is here: <%= link_to("ABDA'15, EEE'15, GCA'15, ESA'15, & ICOMP'15: Tuesday, July 28, 2015 Schedule", 'https://world-academy-of-science.org/worldcomp15/ws/program/abd_eee_gca_esa_icm28.html', class: "text-blue-700") %>
     </p>
     <p>It is apparently available to people in ACM, so if you have access you might be able to use that.</p>
   </div>
-</div>
-<div class="card">
-  <div class="card-divider">
-    <h3>
+  <div class="flex flex-col gap-4 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">
       I Was Published Twice in the Same Journal Issue (JISAR Vol. 7 No. 2)
     </h3>
-  </div>
-  <div class="card-section">
     <p>
-      I was published twice in the May issue of the 2014 Journal of Information Systems Applied Research‏.
+      I was published twice in the May issue of the 2014 Journal of Information Systems Applied Research.
       See the issue here: 
-      <%= link_to('JISAR Vol. 7 No. 2', 'papers/JISAR_V7_N2.pdf') %>
+      <%= link_to('JISAR Vol. 7 No. 2', 'papers/JISAR_V7_N2.pdf', class: "text-blue-700") %>
       .  I have the first and last entries in the issue.
     </p>
   </div>
-</div>
-<div class="card">
-  <div class="card-divider">
-    <h3>
+  <div class="flex flex-col gap-4 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">
       Taxonomy of Common Software Testing 
       Terminology: Framework for Key Software 
       Engineering Testing Concepts is now in Journal Form
     </h3>
-  </div>
-  <div class="card-section">
     <p>
       I was the secondary author on this paper (see below).  
       You may view the paper here: 
-      <%= link_to('A Comparison of Software Testing (JISAR)', jisarcomparison_path) %>
-    </p>
+      <%= link_to('A Comparison of Software Testing (JISAR)', jisarcomparison_path, class: "text-blue-700") %>
+    </p>    
   </div>
-</div>
-<div class="card">
-  <div class="card-divider">
-    <h3>
+  <div class="flex flex-col gap-4 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">
       A Comparison of Software Testing Using the Object-Oriented Paradigm and Traditional 
       Testing is now in Journal Form
     </h3>
-  </div>
-  <div class="card-section">
     <p>
       I was the primary author on this paper (see below).  
       You may view the paper here: 
-      <%= link_to('A Comparison of Software Testing (JISAR)', jisartaxonomy_path) %>
-    </p>
+      <%= link_to('A Comparison of Software Testing (JISAR)', jisartaxonomy_path, class: "text-blue-700") %>
+    </p>    
   </div>
-</div>
-<div class="card">
-  <div class="card-divider">
-    <h3>Taxonomy of Common Software Testing Terminology: Framework for Key Software Engineering Testing Concepts</h3>
-  </div>
-  <div class="card-section">
+  <div class="flex flex-col gap-4 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">Taxonomy of Common Software Testing Terminology: Framework for Key Software Engineering Testing Concepts</h3>
     <p>
       I was secondary author on this paper.  
       My section of this paper was taken from a larger paper written about object-oriented testing
       as part of a research assistantship at the University of North Florida.  
       The papers were presented at the CONISAR conference from 11/7-11/10. 
       You may view the paper here: 
-      <%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path) %>.
+      <%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path, class: "text-blue-700") %>.
     </p>
     <strong>Jamie Gordon</strong>
     <em>11/12/13</em>
   </div>
-</div>
-<div class="card">
-  <div class="card-divider">
-    <h3>A Comparison of Software Testing Using the Oject-Oriented Paradigm and Traditional Testing</h3>
-  </div>
-  <div class="card-section">
+  <div class="flex flex-col gap-4 border border-slate-400 rounded p-4">
+    <h3 class="text-3xl">A Comparison of Software Testing Using the Oject-Oriented Paradigm and Traditional Testing</h3>
     <p>
       I was the primary author on this paper about object oriented testing.  
     <p>
-      You may view the paper at: <%= link_to('A Comparison of Software Testing (CONISAR)', conisarcomparison_path) %>.  
+      You may view the paper at: <%= link_to('A Comparison of Software Testing (CONISAR)', conisarcomparison_path, class: "text-blue-700") %>.  
       It is actually the bigger part of a large paper I wrote as a research assistant at the University of North Florida.  
       The papers were presented at the CONISAR conference from 11/7-11/10 this past weekend.
     </p>
     <strong>Jamie Gordon</strong>
     <em>11/12/13</em>
   </div>
-</div>
+</article>

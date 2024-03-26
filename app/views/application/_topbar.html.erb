@@ -1,36 +1,39 @@
-<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="responsive-menu">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li>
-        <%= image_tag(asset_pack_path('media/packs/images/favicons/profile.png'), class: 'topbar-image') %>
-      </li>
-      <li class="menu-text">Jamie Gordon</li>
-      <li><%= link_to('Home', root_path) %></li>
-      <li class="has-submenu">
-        <%= link_to('Papers', papers_path) %>
-        <ul class="submenu menu vertical" data-submenu>
-          <li><%= link_to('Distributed XML with Tag Shuffling in Cloud Computing', distributedxml_path) %></li>
-          <li><%= link_to('A Comparison of Software Testing (JISAR)', jisarcomparison_path) %></li>
-          <li><%= link_to('Taxonomy of Common Software Testing Terminology (JISAR)', jisartaxonomy_path) %></li>
-          <li><%= link_to('A Comparison of Software Testing (CONISAR)', conisarcomparison_path) %></li>
-          <li><%= link_to('Taxonomy of Common Software Testing Terminology (CONISAR)', conisartaxonomy_path) %></li>
-        </ul>
-      </li>
-      <li class="has-submenu">
-        <%= link_to('Resume', 'resumes/resume.pdf') %>
-        <ul class="submenu menu vertical" data-submenu>
-          <li><%= link_to('resume.pdf (recommended)', 'resumes/resume.pdf') %></li>
-          <li><%= link_to('resume.docx', 'resumes/resume.docx') %></li>
-        </ul>
-      </li>
-      <li><%= link_to('GitHub', 'https://github.com/gellaho') %></li>
-      <li><%= link_to('About', about_path) %></li>
-      <li><%= link_to('One English Word', oneenglishword_path) %></li>
-    </ul>
+<nav 
+  class="
+    h-12
+    border-emerald-600
+    border-b-2
+    bg-slate-700
+    text-white
+    w-full
+    w-min-full
+    shadow-md
+  "
+>
+  <div class="flex flex-row gap-3 items-center p-2">
+    <%= button_tag(type: "button", class: "flex md:hidden", "x-on:click" => "mobileNav = !mobileNav") do %>
+      <%= icon(:bars_3) %>
+    <% end %>
+    <%= vite_image_tag('images/favicons/profile.png', class: 'h-8') %>
+    <%= link_to('Home', root_path, class: "text-emerald-600 font-medium") %>
+    <div class="hidden md:flex flex-row gap-4 items-center">
+      <%= render("topbar_links") %>
+    </div>
   </div>
-</div>
+  <div
+    class="
+      flex
+      md:hidden
+      flex-col
+      p-2
+      gap-2
+      text-white
+      bg-slate-700
+      z-50
+      relative
+    "
+    x-show="mobileNav"
+  >
+    <%= render("topbar_links") %>
+  </div>
+</nav>

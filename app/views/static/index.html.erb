@@ -1,21 +1,62 @@
-<h1>Jamie Gordon</h1>
-<p>
-  That's me.
-</p>
-<p>Here are some projects to look at if you want:</p>
-<ul>
-  <li><%= link_to 'Flop Charts (WIP)', 'http://flopcharts.com' %></li>
-  <li>
-    <%= link_to('This Site', 'http://jamiesgordon.com') %>
-    <ul>
+<article class="flex flex-col gap-4">
+  <h1 class="text-4xl">Jamie Gordon</h1>
+
+  <div class="flex md:flex-row flex-col gap-4">
+    <%= vite_image_tag('images/Welcome.jpg', class: 'md:h-72 drop-shadow-xl') %>
+    <div class="flex flex-col gap-2">
+      <p>
+        Hey, welcome!
+      </p>
+      <p>I've been coding since high school and professionally since 2013. In my career, I've been focused primarily in Ruby on Rails, with standard HTML/CSS frontends and React frontends.</p>
+      <p>I also have some professional experience in Elixir, focusing more with parallel processing and data warehousing.</p>
+      <p>Extensively used 3rd party APIs to connect to external services, as well as developing APIs for other companies to connect to.</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <h2 class="text-3xl">Skills</h2>
+    <ul class="list-disc list-inside">
       <li>Ruby on Rails</li>
-      <li>Foundation Theme</li>
-      <li>(Some) React</li>
-      <li>(Some) Webpack</li>
-      <li>(Some) Typescript</li>
+      <li>Elixir</li>
+      <li>React</li>
+      <li>Typescript</li>
       <li>CSS, SCSS, all that style stuff</li>
-      <li>HTML (duh)</li>
+      <li>HTML</li>
       <li>LaTeX (for Resume)</li>
+      <li>Java (high school/college)</li>
+      <li>External APIs (xml, json, you name it, I've probably dealt with it)</li>
+      <li>Plus a bunch of other stuff</li>
     </ul>
-  </li>
-</ul>
+  </div>
+
+  <section class="flex flex-col gap-4">
+    <h2 class="text-3xl">Projects</h2>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">This site</h3>
+      <%= link_to("https://github.com/gellaho/jamiesgordon.com", "https://github.com/gellaho/jamiesgordon.com", class: 'text-blue-700') %>
+      <p>Ruby on Rails. Not a lot to see, mostly just shows off front end skills. Built using Tailwind.css and Alpine.js</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">Discord Archive Creator (Elixir)</h3>
+      <%= link_to('https://github.com/gellaho/book_cage', "https://github.com/gellaho/book_cage", class: 'text-blue-700') %>
+      <p>Elixir. This is built for my other personal website, which archives book readings that I've done on Discord.</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">One English Word</h3>
+      <%= link_to('oneenglishword.com', oneenglishword_path, class: 'text-blue-700') %>
+      <p>A silly website that uses an API to show one English word at a time. Comes from an old inside joke.</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">gellaho.com</h3>
+      <%= link_to('gellaho.com', "https://gellaho.com", class: 'text-blue-700') %>
+      <strong class="text-medium">Note: Comedy website. Hard to understand what's happening on this webiste or why. Probably not safe for work.</strong>
+      <p>        
+        I'm very involved in a comedy Discord server for the comedy website <%= link_to('https://1900hotdog.com', 'https://1900hotdog.com', class: 'text-blue-700') %>.
+        This is where all the stuff I've made for it lives. It's got movies I've made, audiobooks I've done, and a bunch of other inexplicable stuff.
+
+        Unfortunately, it's also probably the most technologically intersting page. It's got an rss feed I built myself, little React games, and
+        A ton of data stored in book readings. And actual ActiveRecord stuff.
+      </p>
+    </div>
+  </section>
+</article>
