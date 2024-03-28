@@ -32,6 +32,11 @@
   <section class="flex flex-col gap-4">
     <h2 class="text-3xl">Projects</h2>
     <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">Tournament Project</h3>
+      <%= link_to("https://github.com/gellaho/gellaho_tournament", "https://github.com/gellaho/gellaho_tournament", class: 'text-blue-700') %>
+      <p>Ruby on Rails. Shows the results of tournaments through images, along with optional commentary. Has an importer for existing tournaments.</p>
+    </div>
+    <div class="flex flex-col gap-2">
       <h3 class="text-2xl">This site</h3>
       <%= link_to("https://github.com/gellaho/jamiesgordon.com", "https://github.com/gellaho/jamiesgordon.com", class: 'text-blue-700') %>
       <p>Ruby on Rails. Not a lot to see, mostly just shows off front end skills. Built using Tailwind.css and Alpine.js</p>
@@ -45,6 +50,18 @@
       <h3 class="text-2xl">One English Word</h3>
       <%= link_to('oneenglishword.com', oneenglishword_path, class: 'text-blue-700') %>
       <p>A silly website that uses an API to show one English word at a time. Comes from an old inside joke.</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-2xl">gellaho.com</h3>
+      <%= link_to('gellaho.com', "https://gellaho.com", class: 'text-blue-700') %>
+      <strong class="text-medium">Note: Comedy website. Hard to understand what's happening on this webiste or why. Probably not safe for work.</strong>
+      <p>        
+        I'm very involved in a comedy Discord server for the comedy website <%= link_to('https://1900hotdog.com', 'https://1900hotdog.com', class: 'text-blue-700') %>.
+        This is where all the stuff I've made for it lives. It's got movies I've made, audiobooks I've done, and a bunch of other inexplicable stuff.
+
+        Unfortunately, it's also probably the most technologically intersting page. It's got an rss feed I built myself, little React games, and
+        A ton of data stored in book readings. And actual ActiveRecord stuff.
+      </p>
     </div>
   </section>
 </article>
